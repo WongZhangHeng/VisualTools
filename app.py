@@ -17,7 +17,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'pdf', 'docx'}
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Gemini API Client Initialization
-apiKey = "AIzaSyAU8CZEdBvutDwz0sIDIdzqwp3TN7pPNc8"
+apiKey = "AIzaSyCGbdKkMtkTVM332pu8rUL1yKlG936gEgU"
 client = genai.Client(api_key=apiKey)
 
 
@@ -100,3 +100,4 @@ async def upload_file():
 if __name__ == '__main__':
 
     app.run(host="0.0.0.0", port=5000,debug=True)
+
