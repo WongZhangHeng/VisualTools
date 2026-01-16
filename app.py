@@ -17,7 +17,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'pdf', 'docx'}
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Gemini API Client Initialization
-apiKey = "AIzaSyCQxu68D_ksfRFGpNK9ahRdQ6TqlcfiMwE"
+apiKey = "AIzaSyAU8CZEdBvutDwz0sIDIdzqwp3TN7pPNc8"
 client = genai.Client(api_key=apiKey)
 
 
@@ -98,4 +98,5 @@ async def upload_file():
     return jsonify({"error": "File type not allowed"}), 400
 
 if __name__ == '__main__':
+
     app.run(host="0.0.0.0", port=5000,debug=True)
